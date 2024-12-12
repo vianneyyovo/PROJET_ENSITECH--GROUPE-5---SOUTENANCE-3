@@ -1,0 +1,114 @@
+<app-header></app-header>
+
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>Choisir un étudiant et un ou plusieurs cours à lui associer</h1>
+  </div>
+  <!-- End Page Title -->
+  <br />
+
+  <section class="section">
+    <div class="row center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Association cours à un étudiant</h5>
+
+            <!-- General Form Elements -->
+            <form class="needs-validation" novalidate>
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Etudiant</label>
+                <div class="col-sm-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    required
+                  >
+                    <option value="" selected>Sélectionner un étudiant</option>
+                    <option value="1">NANKAM Fabrice</option>
+                    <option value="2">FALL Omar</option>
+                    <option value="3">YOVO Vianney</option>
+                    <option value="4">DJUISSI Sidonie</option>
+                    <option value="5">GODE Justion</option>
+                    <option value="6">MENSAH John</option>
+                    <option value="7">NZOMO Rodrigue</option>
+                    <option value="8">DIAO Hothia</option>
+                    <option value="9">DIAKITE Omar</option>
+                    <option value="10">BOUBAKER Warda</option>
+                    <option value="11">SODOKIN Isabelle</option>
+                  </select>
+                  <div class="invalid-feedback">Sélectionner un étudiant</div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label"
+                  >Matricule</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Matricule de l'étudiant"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Entrez le matricule de l'étudiant
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Cours</label>
+                <div class="col-sm-10">
+                  <select
+                    class="form-select"
+                    multiple
+                    aria-label="multiple select example"
+                    required
+                  >
+                    <option value="" selected>
+                      Sélectionner un ou plusieurs cours
+                    </option>
+                    <option value="1">Initiation language UML</option>
+                    <option value="2">Programmation orienté objet</option>
+                    <option value="3">Initiation au language JAVA</option>
+                    <option value="4">Base de données</option>
+
+                    <option value="5">
+                      Initiation aux test des applications
+                    </option>
+                    <option value="6">Algorithme</option>
+                    <option value="7">
+                      Initiation au Framework SPRINTBOOT
+                    </option>
+                    <option value="8">Langage HTML et CSS</option>
+                    <option value="9">Langage JAVASCRIPT</option>
+                    <option value="10">Initiation DEVOPS</option>
+                    <option value="11">Initiation au Framework Angular</option>
+                    <option value="12">
+                      Initiation sécurité des applications
+                    </option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Sélectionner un ou plusieurs cours
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3 center">
+                <div class="col-sm-10 center">
+                  <button type="submit" class="btn btn-primary w-25">
+                    Associer
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- End General Form Elements -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

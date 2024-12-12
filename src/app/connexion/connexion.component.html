@@ -1,0 +1,118 @@
+<main class="bgd-body">
+  <div class="container">
+    <section
+      class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="d-flex justify-content-center py-4">
+              <a
+                href="index.html"
+                class="logo d-flex align-items-center w-auto"
+              >
+                <img src="assets/img/logo.png" alt="" />
+                <span class="d-none d-lg-block">Ensitech</span>
+              </a>
+            </div>
+            <!-- End Logo -->
+
+            <div class="card mb-3 bg-form-home">
+              <div class="card-body">
+                <div class="pt-4 pb-2">
+                  <h5 class="card-title text-center pb-0 fs-4">
+                    Connexion à votre compte
+                  </h5>
+                  <p class="text-center small">
+                    Entrer votre email & votre mot de passe pour vous connecter
+                  </p>
+                </div>
+
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-12 position">
+                    <label for="email" class="form-label">Email</label>
+
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Entrer votre email"
+                      class="form-control icon-input"
+                      id="email"
+                      required
+                    />
+                    <img src="assets/img/envelop.png" id="envel" />
+                    <div class="invalid-feedback">Entrer votre email svp!</div>
+                  </div>
+
+                  <div class="col-12 position">
+                    <label for="password" class="form-label"
+                      >Mot de passe</label
+                    >
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Entrer votre mot de passe"
+                      class="form-control icon-input"
+                      id="password"
+                      required
+                    />
+                    <img
+                      src="assets/img/lock-icon-transparent-1.jpg"
+                      id="lock"
+                    />
+                    <img
+                      src="assets/img/eye-hide.png"
+                      id="eye"
+                      onClick="changer()"
+                    />
+                    <div class="invalid-feedback">
+                      Entrer votre mot de passe svp!
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="remember"
+                        value="true"
+                        id="rememberMe"
+                      />
+                      <label class="form-check-label" for="rememberMe"
+                        >Garder ma session ouverte</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-12 center">
+                    <a routerLink="/home" class="btn btn-primary">
+                      Se connecter
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <p class="small mb-0">
+                      Mot de passe oublié?
+                      <a href="#">Réinitialiser votre mot de passe</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+              Designed by
+              <a href="membres-gpe5.html">Gpe5-FmtDev10000Codeurs2024</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

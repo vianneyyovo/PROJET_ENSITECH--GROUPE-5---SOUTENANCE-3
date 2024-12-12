@@ -1,0 +1,423 @@
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>BIENVENUE CHEZ ENSITECH</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active"></li>
+      </ol>
+    </nav>
+  </div>
+  <!-- End Page Title -->
+
+  <section class="section dashboard">
+    <div class="row">
+      <!-- Left side columns -->
+      <div class="col-lg-8">
+        <div class="row">
+          <!-- Sales Card -->
+          <div class="col-xxl-4 col-md-6">
+            <div class="card info-card sales-card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"
+                  ><i class="bi bi-three-dots"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Alternance</a></li>
+                  <li><a class="dropdown-item" href="#">A distance</a></li>
+                  <li><a class="dropdown-item" href="#">Presentiel</a></li>
+                </ul>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">FILIERES<span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <i class="bi bi-journal-code"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>50</h6>
+                    <span class="text-success small pt-1 fw-bold"></span>
+                    <span class="text-muted small pt-2 ps-1"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Sales Card -->
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-4 col-md-6">
+            <div class="card info-card revenue-card">
+              <div class="card-body">
+                <h5 class="card-title">SCOLARITE<span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <i class="bi bi-currency-dollar"></i>
+                  </div>
+                  <div class="ps-4">
+                    <h6>3220264</h6>
+                    <span class="text-success small pt-1 fw-bold"></span>
+                    <span class="text-muted small pt-2 ps-1"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Revenue Card -->
+
+          <!-- Customers Card -->
+          <div class="col-xxl-4 col-xl-12">
+            <div class="card info-card customers-card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"
+                  ><i class="bi bi-three-dots"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filtre</h6>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Moyenne annuelle</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Moyenne trimestrielle</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Moyenne generale</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">ETUDIANTS <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>1244</h6>
+                    <span class="text-danger small pt-1 fw-bold">95%</span>
+                    <span class="text-muted small pt-2 ps-1">Inscrits</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">ENSEIGNANTS <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>30</h6>
+                    <span class="text-danger small pt-1 fw-bold"></span>
+                    <span class="text-muted small pt-2 ps-1">Enseignants</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Customers Card -->
+
+          <!-- Reports -->
+          <div class="col-12">
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"
+                  ><i class="bi bi-three-dots"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Trimestre</a></li>
+                  <li><a class="dropdown-item" href="#">Semestre</a></li>
+                  <li><a class="dropdown-item" href="#">Annee</a></li>
+                </ul>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Statistique moyenne annuelle des etudiants
+                </h5>
+
+                <!-- Line Chart -->
+                <div id="reportsChart"></div>
+
+                <script>
+                  document.addEventListener("DOMContentLoaded", () => {
+                    new ApexCharts(document.querySelector("#reportsChart"), {
+                      series: [
+                        {
+                          name: "Etudiants licence",
+                          data: [12, 16, 14, 15, 16, 14, 20],
+                        },
+                        {
+                          name: "Etudiants master",
+                          data: [8, 10, 15, 13, 14, 16, 15],
+                        },
+                        {
+                          name: "Etudiants doctorats",
+                          data: [10, 11, 13, 15, 13, 14, 17],
+                        },
+                      ],
+                      chart: {
+                        height: 350,
+                        type: "area",
+                        toolbar: {
+                          show: false,
+                        },
+                      },
+                      markers: {
+                        size: 4,
+                      },
+                      colors: ["#4154f1", "#2eca6a", "#ff771d"],
+                      fill: {
+                        type: "gradient",
+                        gradient: {
+                          shadeIntensity: 1,
+                          opacityFrom: 0.3,
+                          opacityTo: 0.4,
+                          stops: [0, 90, 100],
+                        },
+                      },
+                      dataLabels: {
+                        enabled: false,
+                      },
+                      stroke: {
+                        curve: "smooth",
+                        width: 2,
+                      },
+                      xaxis: {
+                        type: "datetime",
+                        categories: [
+                          "2026-09-27T00:00:00.000Z",
+                          "2025-09-19T01:30:00.000Z",
+                          "2024-09-19T02:30:00.000Z",
+                          "2023-09-19T03:30:00.000Z",
+                          "2022-09-19T04:30:00.000Z",
+                          "2021-09-19T05:30:00.000Z",
+                          "2020-09-19T06:30:00.000Z",
+                        ],
+                      },
+                      tooltip: {
+                        x: {
+                          format: "dd/MM/yy HH:mm",
+                        },
+                      },
+                    }).render();
+                  });
+                </script>
+                <!-- End Line Chart -->
+              </div>
+            </div>
+          </div>
+          <!-- End Reports -->
+
+          <!-- Recent Sales -->
+          <div class="col-12">
+            <div class="card recent-sales overflow-auto">
+              <div class="filter">
+                <a class="" href="#" data-bs-toggle="dropdown"
+                  ><i class=""></i
+                ></a>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Meilleurs etudiants<span></span></h5>
+
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">MATRICULES</th>
+                      <th scope="col">ETUDIANTS</th>
+                      <th scope="col">FORMATONS</th>
+                      <th scope="col">MOYENNES</th>
+                      <th scope="col">STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><a href="#">2457</a></th>
+                      <td>Vianney yovo</td>
+                      <td>
+                        <a href="#" class="text-primary">Scrum master</a>
+                      </td>
+                      <td>18</td>
+                      <td>
+                        <span class="badge bg-success">Tres bien</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><a href="#">2147</a></th>
+                      <td>Fabrice nakam</td>
+                      <td>
+                        <a href="#" class="text-primary">Product owner</a>
+                      </td>
+                      <td>17</td>
+                      <td><span class="badge bg-warning">Tres bien</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><a href="#">2025</a></th>
+                      <td>Fall Omar</td>
+                      <td>
+                        <a href="#" class="text-primary"
+                          >Developer full stack</a
+                        >
+                      </td>
+                      <td>16</td>
+                      <td>
+                        <span class="badge bg-success">Bien</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><a href="#">2644</a></th>
+                      <td>John Mensah</td>
+                      <td>
+                        <a href="#" class="text-primar">UI/UX design</a>
+                      </td>
+                      <td>15.5</td>
+                      <td><span class="badge bg-danger">Bien</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><a href="#">2644</a></th>
+                      <td>Justin gode</td>
+                      <td>
+                        <a href="#" class="text-primary"
+                          >front end developpeur</a
+                        >
+                      </td>
+                      <td>15</td>
+                      <td>
+                        <span class="badge bg-success">Assez bien</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><a href="#">2147</a></th>
+                      <td>Saturnin Ahoussinou</td>
+                      <td>
+                        <a href="#" class="text-primary">design web</a>
+                      </td>
+                      <td>14</td>
+                      <td><span class="badge bg-warning">bien</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- End Recent Sales -->
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <!-- Recent Activity -->
+        <div class="card">
+          <div class="filter">
+            <a class="icon" href="#" data-bs-toggle="dropdown"
+              ><i class="bi bi-three-dots"></i
+            ></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <li class="dropdown-header text-start">
+                <h6>Filter</h6>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Partiel</a></li>
+              <li><a class="dropdown-item" href="#">Notes</a></li>
+              <li><a class="dropdown-item" href="#">Moyennes</a></li>
+            </ul>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Activites recentes<span></span></h5>
+
+            <div class="activity">
+              <div class="activity-item d-flex">
+                <div class="activite-label">02/09/2024</div>
+                <i
+                  class="bi bi-circle-fill activity-badge text-success align-self-start"
+                ></i>
+                <div class="activity-content">
+                  Debut des activites academique ENSITECH
+                  <a href="#" class="fw-bold text-dark"></a>
+                </div>
+              </div>
+              <!-- End activity item-->
+
+              <div class="activity-item d-flex">
+                <div class="activite-label">02/10/2024</div>
+                <i
+                  class="bi bi-circle-fill activity-badge text-danger align-self-start"
+                ></i>
+                <div class="activity-content">Examen 1er semestre</div>
+              </div>
+              <!-- End activity item-->
+
+              <div class="activity-item d-flex">
+                <div class="activite-label">05/11/2024</div>
+                <i
+                  class="bi bi-circle-fill activity-badge text-primary align-self-start"
+                ></i>
+                <div class="activity-content">Examen 2ieme semestre</div>
+              </div>
+              <!-- End activity item-->
+
+              <div class="activity-item d-flex">
+                <div class="activite-label">08/10/2024</div>
+                <i
+                  class="bi bi-circle-fill activity-badge text-info align-self-start"
+                ></i>
+                <div class="activity-content">
+                  Examen 2 ieme semestre
+                  <a href="#" class="fw-bold text-dark"></a>
+                </div>
+              </div>
+              <!-- End activity item-->
+
+              <div class="activity-item d-flex">
+                <div class="activite-label">10/12/20224</div>
+                <i
+                  class="bi bi-circle-fill activity-badge text-warning align-self-start"
+                ></i>
+                <div class="activity-content">
+                  Programme et forum des jeunes etudiants ENSITECH
+                </div>
+              </div>
+              <!-- End activity item-->
+
+              <div class="activity-item d-flex">
+                <div class="activite-label">01/01/2025</div>
+                <i
+                  class="bi bi-circle-fill activity-badge text-muted align-self-start"
+                ></i>
+                <div class="activity-content">
+                  Activites extra-scolaires ENSITECH
+                </div>
+              </div>
+              <!-- End activity item-->
+            </div>
+          </div>
+        </div>
+        <!-- End Recent Activity -->
+      </div>
+    </div>
+  </section>
+</main>

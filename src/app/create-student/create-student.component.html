@@ -1,0 +1,246 @@
+<app-header></app-header>
+
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>Entrez les informations demandées pour créer un nouvel étudiant</h1>
+  </div>
+  <!-- End Page Title -->
+  <br />
+
+  <section class="section">
+    <div class="row center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Création d'un nouvel étudiant</h5>
+
+            <!-- General Form Elements -->
+            <form class="needs-validation" novalidate>
+              <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label">Nom(s)</label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Nom de l'étudiant"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Entrez le nom de l'étudiant svp
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="prenom" class="col-sm-2 col-form-label"
+                  >Prénom(s)</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    id="prenom"
+                    placeholder="Prénom de l'étudiant"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Entrez le prénom de l'étudiant svp
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputDate" class="col-sm-4 col-form-label"
+                  >Date de Naissance</label
+                >
+                <div class="col-sm-8 has-validation">
+                  <input type="date" class="form-control" required />
+                  <div class="invalid-feedback">
+                    Veuillez renseigner sa date de naissance
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="naissance" class="col-sm-4 col-form-label"
+                  >Lieu de Naissance</label
+                >
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    id="naissance"
+                    placeholder="Lieu de naissance"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Entrez son lieu de naissance
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Sexe</label>
+                <div class="col-sm-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    required
+                  >
+                    <option value="" selected>
+                      Sélectionner le sexe de l'étudiant
+                    </option>
+                    <option value="M">Masculin</option>
+                    <option value="F">Féminin</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Choisir le sexe de l'étudiant
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="telephone" class="col-sm-4 col-form-label"
+                  >Numéro de téléphone</label
+                >
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    id="telephone"
+                    placeholder="Numéro de tétéphone"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Saisir son numéro de téléphone
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="adresse" class="col-sm-2 col-form-label"
+                  >Adresse</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    id="adresse"
+                    placeholder="Adresse de l'étudiant"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email de l'étudiant"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Saisir l'email de l'étudiant
+                  </div>
+                </div>
+              </div>
+
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Cycle</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      LICENCE
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      MASTER
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios"
+                      value="option"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      DOCTORAT
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Filière</label>
+                <div class="col-sm-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    required
+                  >
+                    <option value="" selected>
+                      Sélectionner la filière de l'étudiant
+                    </option>
+
+                    <option value="1">Analyste/Concepteur</option>
+                    <option value="2">Dévéloppeur FullStack</option>
+                    <option value="3">Testeur</option>
+                    <option value="4">Expert en cybersécurité</option>
+                    <option value="5">Administrateur Base de données</option>
+                    <option value="6">Data Scientist</option>
+                    <option value="7">Data Analist</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Choississez la filière de l'étudiant
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="commentaire" class="col-sm-4 col-form-label"
+                  >Commentaire</label
+                >
+                <div class="col-sm-10">
+                  <textarea
+                    class="form-control"
+                    id="commentaire"
+                    placeholder="Saisissez un commentaire sur l'étudiant"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="row mb-3 center">
+                <div class="col-sm-10 center">
+                  <button type="submit" class="btn btn-primary">
+                    Enregistrer
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- End General Form Elements -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
