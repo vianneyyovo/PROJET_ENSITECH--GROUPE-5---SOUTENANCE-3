@@ -13,6 +13,7 @@ import { AssociateCoursesComponent } from './associate-courses/associate-courses
 import { LireInfoEtudiantComponent } from './lire-info-etudiant/lire-info-etudiant.component';
 import { ModifierInfoEtudiantComponent } from './modifier-info-etudiant/modifier-info-etudiant.component';
 import { ListeDesEtudiantComponent } from './liste-des-etudiant/liste-des-etudiant.component';
+import { CreerUnCoursComponent } from './creer-un-cours/creer-un-cours.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ListeDesEtudiantComponent } from './liste-des-etudiant/liste-des-etudia
     AssociateCoursesComponent,
     LireInfoEtudiantComponent,
     ModifierInfoEtudiantComponent,
-    ListeDesEtudiantComponent
+    ListeDesEtudiantComponent,
+    CreerUnCoursComponent
   ],
   imports: [
     BrowserModule,

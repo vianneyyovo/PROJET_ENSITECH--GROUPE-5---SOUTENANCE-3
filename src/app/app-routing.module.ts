@@ -8,6 +8,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { LireInfoEtudiantComponent } from './lire-info-etudiant/lire-info-etudiant.component';
 import { ModifierInfoEtudiantComponent } from './modifier-info-etudiant/modifier-info-etudiant.component';
 import { ListeDesEtudiantComponent } from './liste-des-etudiant/liste-des-etudiant.component';
+import { CreerUnCoursComponent } from './creer-un-cours/creer-un-cours.component';
 
 const routes: Routes = [
   { path: '', component: ConnexionComponent },
@@ -16,7 +17,8 @@ const routes: Routes = [
     { path: 'associate-courses', component: AssociateCoursesComponent },
     { path: 'lire-info-etudiant', component: LireInfoEtudiantComponent },
     { path: 'modifer-info-etudiant', component: ModifierInfoEtudiantComponent },
-    { path: 'liste-des-etudiant', component: ListeDesEtudiantComponent }
+    { path: 'liste-des-etudiant', component: ListeDesEtudiantComponent },
+    { path: 'creer-un-cours', component: CreerUnCoursComponent }
 
 
 
