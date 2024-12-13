@@ -1,0 +1,143 @@
+<app-header></app-header>
+<main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Entrez les informations demandées pour créer un nouveau cours</h1>
+    </div>
+    <!-- End Page Title -->
+    <br />
+
+    <section class="section">
+      <div class="row center">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Création d'un nouveau cours</h5>
+
+              <!-- General Form Elements -->
+              <form class="needs-validation" novalidate>
+                <div class="row mb-3">
+                  <label for="name" class="col-sm-2 col-form-label"
+                    >Intitulé</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Intitulé du cours"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Entrez l'intitulé du cours svp
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="prenom" class="col-sm-2 col-form-label"
+                    >Enseignant principal</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="prenom"
+                      placeholder="Nom et prénom de l'enseignant principal"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Renseigner l'enseignant principal
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="prenom" class="col-sm-2 col-form-label"
+                    >Enseignant suppléant</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="prenom"
+                      placeholder="Nom et prénom du suppléant"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Renseigner l'enseignant suppléant
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="hcours" class="col-sm-4 col-form-label"
+                    >Nombre d'heures du cours</label
+                  >
+                  <div class="col-sm-8">
+                    <input
+                      type="number"
+                      id="hcours"
+                      placeholder="Nombres d'heures"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Entrez le nombre d'heures du cours
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-4 col-form-label"
+                    >Salle de cours</label
+                  >
+                  <div class="col-sm-8">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value="" selected>
+                        Sélectionner la salle de cours
+                      </option>
+                      <option value="1">SL100</option>
+                      <option value="2">SL150</option>
+                      <option value="3">SL200</option>
+                      <option value="4">SL250</option>
+                      <option value="5">SL500</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Choisir la salle de cours
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="commentaire" class="col-sm-4 col-form-label"
+                    >Commentaire</label
+                  >
+                  <div class="col-sm-10">
+                    <textarea
+                      class="form-control"
+                      id="commentaire"
+                      placeholder="Saisissez un commentaire sur le cours"
+                      style="height: 100px"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3 center">
+                  <div class="col-sm-10 center">
+                    <button type="submit" class="btn btn-primary">
+                      Enregistrer
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- End General Form Elements -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
