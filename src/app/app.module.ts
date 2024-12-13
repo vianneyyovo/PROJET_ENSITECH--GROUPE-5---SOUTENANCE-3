@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { AssociateCoursesComponent } from './associate-courses/associate-courses.component';
 import { LireInfoEtudiantComponent } from './lire-info-etudiant/lire-info-etudiant.component';
+import { ModifierInfoEtudiantComponent } from './modifier-info-etudiant/modifier-info-etudiant.component';
+import { ListeDesEtudiantComponent } from './liste-des-etudiant/liste-des-etudiant.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LireInfoEtudiantComponent } from './lire-info-etudiant/lire-info-etudia
     FooterComponent,
     CreateStudentComponent,
     AssociateCoursesComponent,
-    LireInfoEtudiantComponent
+    LireInfoEtudiantComponent,
+    ModifierInfoEtudiantComponent,
+    ListeDesEtudiantComponent
   ],
   imports: [
     BrowserModule,
