@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { AssociateCoursesComponent } from './associate-courses/associate-courses.component';
+import { LireInfoEtudiantComponent } from './lire-info-etudiant/lire-info-etudiant.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AssociateCoursesComponent } from './associate-courses/associate-courses
     StatisticComponent,
     FooterComponent,
     CreateStudentComponent,
-    AssociateCoursesComponent
+    AssociateCoursesComponent,
+    LireInfoEtudiantComponent
   ],
   imports: [
     BrowserModule,
